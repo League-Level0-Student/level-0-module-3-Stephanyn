@@ -33,7 +33,7 @@ public class HighLowGame {
 					System.out.println("Too high");
 				}else if (userGuess<random) {
 					System.out.println("Too low");}
-			} JOptionPane.showMessageDialog("You lose:(");
+			} JOptionPane.showMessageDialog(null, "You lose:(");
 				
 				// 6. Win
 				// 12. Use "System.exit(0);" to quit the game if the user guessed the right answer.
