@@ -12,7 +12,7 @@ public class BananaQuiz
 		//1. ask the user if they like bananas
 		String input = JOptionPane.showInputDialog("Do you like bananas?");
 		 if(input.equals("no")) {
-			 JOptionPane.showMessageDialog(null, "You're crazy. You are no longer aloud to answer any further questions.");
+			 JOptionPane.showMessageDialog(null, "You're crazy. You are no longer able to answer any further questions.");
 		 }else if (input.equals("yes")) {
 	String Userhobby = JOptionPane.showInputDialog("Then, what's your favorite hobby?");
 			JOptionPane.showMessageDialog(null,Userhobby+" is much better with bananas!");
