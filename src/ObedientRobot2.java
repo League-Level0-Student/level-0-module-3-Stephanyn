@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 
 import org.jointheleague.graphical.robot.Robot;
@@ -5,16 +7,20 @@ public class ObedientRobot2 {
 	public static void main(String[] args) {
 	Robot ted = new Robot();
 		String input= JOptionPane.showInputDialog("Do you want the rob to draw a square, triangle or a circle?");
-		String color=JOptionPane.showInputDialog("What color? Blue, green, or Purple");
+		String colour=JOptionPane.showInputDialog("What color? Blue, green, or Purple");
 			if(input.equals("square")) {
 				drawSquare(ted,80);
 			}else if(input.equals("triangle")) {
 				drawTriangle(ted,80);
 		}else if(input.equals("circle")) {
 			drawCircle(ted,3);
-		}if(color.equals("blue")) {
-			ted.setPenColor(blue);
-		}
+		}if(colour.equals("blue")) {
+			ted.setPenColor(Color.BLUE);
+		}else if(colour.equals("green"));{
+		ted.setPenColor(Color.green);
+		} if (colour.equals("purple")) {
+			ted.setPenColor(Color.magenta);
+	}
 	}
  	static void drawSquare(Robot rob, int size) {
 		 
